@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anushka Mittal · The Edit</title>
+<meta name="description" content="Anushka Mittal: campaign, retention and growth marketing. 2 years at PhonePe running segmented campaigns for Flipkart, Myntra and 15+ brands, plus a Jaipur-sourced women's apparel label of my own.">
+<meta property="og:title" content="Anushka Mittal · The Edit">
+<meta property="og:description" content="Campaigns, cohorts and customers who come back. A lookbook of my work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#f7f0e3;
+  --paper:#fffaf1;
+  --ink:#2a1f1a;
+  --muted:#6e5e52;
+  --rani:#b8325a;      /* rani pink */
+  --madder:#8f2333;    /* madder red */
+  --indigo:#23365e;    /* block-print indigo */
+  --marigold:#e0a12b;
+  --sage:#7d8b6a;
+  --line:#d9c9b0;
+  --display:'Cormorant Garamond', Georgia, serif;
+  --sans:'DM Sans', system-ui, sans-serif;
+  --mono:'DM Mono', ui-monospace, monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--ivory);
+  color:var(--ink);
+  font-family:var(--sans);
+  line-height:1.6;
+  overflow-x:hidden;
+}
+/* block-print motif used as a subtle background */
+.print{
+  background-color:var(--ivory);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23b8325a' stroke-opacity='.13' stroke-width='1.4'%3E%3Ccircle cx='36' cy='36' r='9'/%3E%3Cpath d='M36 20c5 6 5 10 0 16-5-6-5-10 0-16zM36 52c5-6 5-10 0-16-5 6-5 10 0 16zM20 36c6-5 10-5 16 0-6 5-10 5-16 0zM52 36c-6-5-10-5-16 0 6 5 10 5 16 0z'/%3E%3C/g%3E%3Cg fill='%2323365e' fill-opacity='.10'%3E%3Ccircle cx='0' cy='0' r='3'/%3E%3Ccircle cx='72' cy='0' r='3'/%3E%3Ccircle cx='0' cy='72' r='3'/%3E%3Ccircle cx='72' cy='72' r='3'/%3E%3C/g%3E%3C/svg%3E");
+}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+@media (max-width:600px){.wrap{padding:0 16px}}
+
+/* ---------- measuring-tape progress bar ---------- */
+.tape{position:fixed;top:0;left:0;right:0;height:14px;z-index:50;background:#f3e3b0;
+  background-image:repeating-linear-gradient(90deg,var(--ink) 0 1px,transparent 1px 10px),
+                   repeating-linear-gradient(90deg,var(--ink) 0 1px,transparent 1px 50px);
+  background-size:100% 5px,100% 9px;background-repeat:no-repeat;background-position:0 0,0 0;
+  border-bottom:1px solid #c9b47a;opacity:.95}
+.tape i{position:absolute;top:0;left:0;height:100%;width:0;background:var(--rani);mix-blend-mode:multiply;opacity:.55}
+
+/* ---------- nav ---------- */
+nav{position:sticky;top:14px;z-index:40;background:rgba(247,240,227,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:16px}
+.logo{font-family:var(--display);font-weight:700;font-size:1.5rem;letter-spacing:.02em;text-decoration:none}
+.logo span{color:var(--rani);font-style:italic}
+nav ul{display:flex;gap:22px;list-style:none;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase}
+nav ul a{text-decoration:none;color:var(--muted)}
+nav ul a:hover{color:var(--rani)}
+@media (max-width:760px){nav ul{display:none}}
+
+/* ---------- cover ---------- */
+.cover{position:relative;padding:56px 0 72px;border-bottom:1px solid var(--line)}
+.cover .wrap{display:grid;grid-template-columns:1.25fr .9fr;gap:48px;align-items:center}
+.issue{font-family:var(--mono);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);display:flex;gap:14px;flex-wrap:wrap}
+.issue b{color:var(--rani);font-weight:500}
+.masthead{font-family:var(--display);font-weight:700;font-size:clamp(3.4rem,10vw,7.4rem);line-height:.88;letter-spacing:-.01em;margin:18px 0 10px}
+.masthead em{color:var(--rani);font-style:italic;font-weight:600}
+.dek{font-family:var(--display);font-size:clamp(1.3rem,2.6vw,1.75rem);line-height:1.3;color:var(--indigo);max-width:30ch;margin-bottom:26px;font-style:italic}
+.lede{max-width:56ch;color:var(--muted);margin-bottom:28px}
+.lede strong{color:var(--ink)}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;text-decoration:none;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;font-weight:500;border:1.5px solid var(--ink);transition:.2s}
+.btn.solid{background:var(--ink);color:var(--paper)}
+.btn.solid:hover{background:var(--rani);border-color:var(--rani)}
+.btn:not(.solid):hover{background:var(--paper)}
+
+/* cover lines, like a magazine cover */
+.coverlines{position:relative;background:var(--paper);border:1px solid var(--line);padding:30px 26px;box-shadow:12px 12px 0 var(--indigo)}
+.coverlines::before{content:"COVER STORIES";position:absolute;top:-11px;left:22px;background:var(--marigold);color:var(--ink);font-family:var(--mono);font-size:.68rem;letter-spacing:.2em;padding:3px 10px}
+.cl{padding:14px 0;border-bottom:1px dashed var(--line)}
+.cl:last-child{border-bottom:0}
+.cl .n{font-family:var(--display);font-weight:700;font-size:2.4rem;line-height:1;color:var(--madder)}
+.cl p{font-size:.92rem;color:var(--muted);margin-top:4px}
+@media (max-width:860px){.cover .wrap{grid-template-columns:1fr}.coverlines{box-shadow:8px 8px 0 var(--indigo)}}
+
+/* ---------- section headers ---------- */
+section{padding:84px 0}
+.kicker{font-family:var(--mono);font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--rani);margin-bottom:10px}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(2.2rem,5vw,3.4rem);line-height:1;margin-bottom:14px}
+h2 em{font-style:italic;color:var(--indigo);font-weight:600}
+.sub{color:var(--muted);max-width:62ch;margin-bottom:44px}
+
+/* ---------- fit guide (JD mapping) ---------- */
+.fit{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.fitgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.tag{position:relative;background:var(--ivory);border:1.5px solid var(--ink);border-radius:6px 6px 6px 6px;padding:30px 22px 22px 22px;clip-path:polygon(18px 0,calc(100% - 18px) 0,100% 18px,100% 100%,0 100%,0 18px)}
+.tag::before{content:"";position:absolute;top:12px;left:50%;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:var(--paper);border:1.5px solid var(--ink)}
+.tag .need{font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:12px 0 6px}
+.tag h3{font-family:var(--display);font-size:1.45rem;line-height:1.15;margin-bottom:12px}
+.tag ul{list-style:none;font-size:.9rem}
+.tag li{padding-left:18px;position:relative;margin-bottom:8px}
+.tag li::before{content:"✕";position:absolute;left:0;top:0;color:var(--rani);font-size:.72rem;line-height:1.9}
+.tag li b{color:var(--madder)}
+.honest{margin-top:34px;font-size:.88rem;color:var(--muted);border-left:3px solid var(--marigold);padding:6px 0 6px 16px;max-width:76ch}
+
+/* ---------- the collection (experience) ---------- */
+.look{display:grid;grid-template-columns:220px 1fr;gap:40px;padding:44px 0;border-top:1px solid var(--line)}
+.look:first-of-type{border-top:0}
+.lookno{font-family:var(--display);font-style:italic;font-size:4.6rem;line-height:.9;color:var(--rani)}
+.lookmeta{font-family:var(--mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:10px;line-height:1.8}
+.look h3{font-family:var(--display);font-size:2rem;line-height:1.1}
+.look .co{font-size:.95rem;color:var(--indigo);margin:4px 0 22px}
+.look h4{font-family:var(--mono);font-weight:500;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--madder);margin:20px 0 10px}
+.look ul{list-style:none}
+.look li{padding:9px 0 9px 26px;position:relative;border-bottom:1px dotted var(--line)}
+.look li::before{content:"";position:absolute;left:4px;top:19px;width:10px;height:2px;background:var(--marigold);box-shadow:0 -4px 0 var(--marigold),0 4px 0 var(--marigold);transform:scaleX(.9)}
+.look li strong{color:var(--ink);background:linear-gradient(transparent 62%,rgba(224,161,43,.35) 0)}
+.promo{display:inline-block;margin-top:14px;font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;background:var(--indigo);color:var(--paper);padding:5px 12px;border-radius:999px}
+@media (max-width:760px){.look{grid-template-columns:1fr;gap:12px}.lookno{font-size:3.4rem}}
+
+/* ---------- atelier (apparel venture spotlight) ---------- */
+.atelier{background:var(--indigo);color:var(--paper);position:relative;overflow:hidden}
+.atelier::after{content:"";position:absolute;inset:0;opacity:.09;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M30 6l6 12 12 6-12 6-6 12-6-12-12-6 12-6z' fill='none' stroke='%23fff' stroke-width='1.3'/%3E%3C/svg%3E")}
+.atelier .kicker{color:var(--marigold)}
+.atelier h2 em{color:#f3b9c9}
+.atelier .sub{color:#c9d0e2}
+.atgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;position:relative;z-index:1}
+@media (max-width:860px){.atgrid{grid-template-columns:1fr}}
+.story p{color:#dfe3ef;margin-bottom:16px}
+.story ul{list-style:none;margin-top:8px}
+.story li{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.15);color:#eef0f6}
+.story li b{color:var(--marigold)}
+/* swing tags */
+.swing{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.st{position:relative;background:var(--paper);color:var(--ink);padding:38px 18px 18px;text-align:center;border-radius:4px;
+  clip-path:polygon(50% 0,100% 14%,100% 100%,0 100%,0 14%);transform:rotate(var(--r,0deg));transition:transform .3s}
+.st:hover{transform:rotate(0deg) translateY(-4px)}
+.st::before{content:"";position:absolute;top:14px;left:50%;width:10px;height:10px;margin-left:-5px;border-radius:50%;background:var(--indigo)}
+.st .v{font-family:var(--display);font-size:2.3rem;font-weight:700;line-height:1;color:var(--madder)}
+.st .l{font-size:.8rem;color:var(--muted);margin-top:6px;line-height:1.35}
+.st .sku{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;color:var(--muted);margin-top:12px;border-top:1px dashed var(--line);padding-top:8px}
+
+/* ---------- capsule (other projects) ---------- */
+.capsule{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.card{background:var(--paper);border:1px solid var(--line);padding:28px;position:relative;outline:1.5px dashed var(--line);outline-offset:-10px}
+.card .when{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.card h3{font-family:var(--display);font-size:1.8rem;margin:6px 0 2px}
+.card .role{color:var(--indigo);font-size:.92rem;margin-bottom:14px}
+.card ul{list-style:none;font-size:.92rem}
+.card li{padding:6px 0 6px 18px;position:relative}
+.card li::before{content:"·";position:absolute;left:4px;color:var(--rani);font-weight:700;font-size:1.3rem;line-height:1.1}
+.card li b{color:var(--madder)}
+.card a.link{display:inline-block;margin-top:12px;font-size:.85rem;color:var(--rani)}
+
+/* ---------- size chart (skills) ---------- */
+.sizes{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media (max-width:760px){.sizes{grid-template-columns:1fr}}
+.chart{background:var(--paper);border:1px solid var(--ink)}
+.chart h3{font-family:var(--mono);font-weight:500;font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;background:var(--ink);color:var(--paper);padding:10px 16px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;padding:18px 16px}
+.chip{font-size:.86rem;border:1px solid var(--ink);padding:6px 12px;border-radius:3px;background:var(--ivory);position:relative;padding-left:24px}
+.chip::before{content:"";position:absolute;left:9px;top:50%;width:6px;height:6px;margin-top:-3px;border-radius:50%;border:1px solid var(--ink)}
+
+/* ---------- care label (education & more) ---------- */
+.labels{display:grid;grid-template-columns:1.1fr 1fr;gap:28px}
+@media (max-width:860px){.labels{grid-template-columns:1fr}}
+.care{background:#fbf6ec;border:1px solid var(--line);padding:26px 24px;font-family:var(--mono);font-size:.84rem;position:relative}
+.care::before,.care::after{content:"";position:absolute;left:0;right:0;height:8px;background:repeating-linear-gradient(90deg,var(--line) 0 6px,transparent 6px 12px)}
+.care::before{top:6px}.care::after{bottom:6px}
+.care h3{font-family:var(--display);font-size:1.6rem;font-weight:700;margin:8px 0 14px;letter-spacing:0}
+.origin{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rani);margin-bottom:16px}
+.edu{padding:12px 0;border-top:1px dashed var(--line)}
+.edu b{font-family:var(--sans);font-size:.95rem}
+.edu span{display:block;color:var(--muted);font-size:.78rem;line-height:1.6}
+.icons{display:flex;gap:14px;margin:16px 0 4px;color:var(--muted);font-size:1.1rem}
+.list{list-style:none}
+.list li{padding:10px 0;border-top:1px dashed var(--line);font-family:var(--sans);font-size:.9rem}
+.list li:first-child{border-top:0}
+.list li b{color:var(--madder)}
+
+/* ---------- fitting room (contact) ---------- */
+.fitting{text-align:center;padding:96px 0;border-top:1px solid var(--line)}
+.fitting h2{font-size:clamp(2.6rem,7vw,4.8rem)}
+.fitting .sub{margin:0 auto 32px}
+.fitting .btns{justify-content:center}
+footer{font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-align:center;padding:24px 16px 40px}
+
+/* reveal on scroll */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body class="print">
+<div class="tape" aria-hidden="true"><i id="tapefill"></i></div>
+
+<nav>
+  <div class="wrap">
+    <a href="#top" class="logo">Anushka <span>Mittal</span></a>
+    <ul>
+      <li><a href="#fit">Fit Guide</a></li>
+      <li><a href="#collection">The Collection</a></li>
+      <li><a href="#atelier">Atelier</a></li>
+      <li><a href="#capsule">Capsule</a></li>
+      <li><a href="#fitting">Fitting Room</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============ COVER ============ -->
+<header class="cover" id="top">
+  <div class="wrap">
+    <div class="rv">
+      <div class="issue"><span>The Edit</span><span>·</span><b>Retention &amp; Loyalty Issue</b><span>·</span><span>Nov '26</span></div>
+      <h1 class="masthead">Customers who <em>come back.</em></h1>
+      <p class="dek">Campaign &amp; growth marketer. Two years at PhonePe, plus a women's apparel label of my own.</p>
+      <p class="lede">I spent 2 years at PhonePe running <strong>segmented, cohort-targeted campaigns</strong> for 15+ BFSI and retail brands, including <strong>Flipkart and Myntra</strong> across 4 festive sale cycles. I also sourced, priced and sold a <strong>Jaipur women's apparel collection</strong> to 227 customers, online and at exhibitions. I'm now doing the PGP in Technology &amp; Business Management at Masters' Union.</p>
+      <div class="btns">
+        <a class="btn solid" href="#fit">See the fit guide →</a>
+        <a class="btn" href="https://www.linkedin.com/in/anushka-mittal-900a391b6" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <aside class="coverlines rv" aria-label="Headline numbers">
+      <div class="cl"><div class="n">₹29.5 Cr</div><p>ad revenue delivered at <b>113% of annual target</b>, from 15+ BFSI &amp; retail advertisers</p></div>
+      <div class="cl"><div class="n">93%</div><p>of strategic accounts <b>retained</b> through structured performance reviews</p></div>
+      <div class="cl"><div class="n">9x</div><p>net average campaign ROI from testing creatives, placements &amp; audience cohorts</p></div>
+      <div class="cl"><div class="n">227</div><p>customers for my own apparel label, at <b>~45% average margin</b></p></div>
+    </aside>
+  </div>
+</header>
+
+<!-- ============ FIT GUIDE ============ -->
+<section class="fit" id="fit">
+  <div class="wrap">
+    <div class="rv">
+      <p class="kicker">Fit Guide · Customer Retention, Engagement &amp; Loyalty</p>
+      <h2>How my experience <em>fits the role</em></h2>
+      <p class="sub">Each tag takes one thing the role asks for and lists what I've actually done that's closest to it.</p>
+    </div>
+    <div class="fitgrid">
+      <article class="tag rv">
+        <p class="need">Fashion retail experience</p>
+        <h3>I've run fashion sale campaigns and sold apparel myself</h3>
+        <ul>
+          <li>Built <b>Flipkart &amp; Myntra</b> sale campaigns across <b>4 festive cycles</b>, growing retail ad revenue <b>20%</b> over regular months</li>
+          <li>Ran a Jaipur-sourced <b>women's apparel</b> label: <b>₹6.9L+</b> revenue in 3 months</li>
+        </ul>
+      </article>
+      <article class="tag rv">
+        <p class="need">Retention &amp; relationship management</p>
+        <h3>I keep accounts I've won</h3>
+        <ul>
+          <li>Retained <b>93%</b> of strategic BFSI accounts (HDFC, Bajaj, Fibe) with structured performance reviews</li>
+          <li>Owned <b>15+</b> advertisers end to end and delivered <b>113%</b> of AOP</li>
+        </ul>
+      </article>
+      <article class="tag rv">
+        <p class="need">Segmentation &amp; personalised marketing</p>
+        <h3>I plan campaigns around cohorts</h3>
+        <ul>
+          <li>Lifted conversion <b>~12%</b> by A/B testing creatives for a <b>female 18–30</b> cohort</li>
+          <li>Put segmentation, approval &amp; testing steps in place, so <b>100%</b> of launches went live on time</li>
+        </ul>
+      </article>
+      <article class="tag rv">
+        <p class="need">Data for acquisition, retention &amp; reactivation</p>
+        <h3>I use data to decide who to target</h3>
+        <ul>
+          <li>Found a <b>23% lapsed-user</b> segment with <b>₹125</b> willingness to pay, from a 101-person primary survey</li>
+          <li>Cut Fibe's <b>CAC by 20%</b> by studying campaign data and post-click journeys</li>
+          <li>Fixed the biggest impression-to-install drop-off, lifting funnel conversion <b>~15%</b></li>
+        </ul>
+      </article>
+      <article class="tag rv">
+        <p class="need">Campaigns across digital channels</p>
+        <h3>I run campaigns in seasons, at scale</h3>
+        <ul>
+          <li>Launched &amp; scaled <b>PhonePe Deals</b>: <b>₹23.7 Cr</b> across <b>13 seasons</b> in 6 months</li>
+          <li>Sold through a D2C website, <b>Instagram ads</b> and <b>4+</b> offline exhibitions</li>
+          <li>Cut brand go-live time <b>50%</b> (3 → 1.5 days)</li>
+        </ul>
+      </article>
+      <article class="tag rv">
+        <p class="need">Metrics, ROI &amp; cross-functional work</p>
+        <h3>I track KPIs daily and work across teams</h3>
+        <ul>
+          <li><b>9x</b> net average campaign ROI; <b>~18%</b> higher inventory yield from daily KPI tracking</li>
+          <li>Ran Indus App Store pre-launch work with product, finance, analytics, ops &amp; legal, and hit <b>100%</b> of milestones on time</li>
+          <li>Designed subscription pricing (7-day trial, monthly &amp; annual plans) for my own app</li>
+        </ul>
+      </article>
+    </div>
+    <p class="honest rv">To be upfront: I haven't run a formal loyalty programme yet. What I have done is keep accounts, run seasonal campaigns, find lapsed users, and design trial-to-subscription pricing. Those are the skills I'd build on.</p>
+  </div>
+</section>
+
+<!-- ============ THE COLLECTION (EXPERIENCE) ============ -->
+<section id="collection">
+  <div class="wrap">
+    <div class="rv">
+      <p class="kicker">The Collection · Experience</p>
+      <h2>Four looks, <em>2020 to 2025</em></h2>
+      <p class="sub">My roles in order, most recent first. Each one built on the last.</p>
+    </div>
+
+    <article class="look rv">
+      <div>
+        <div class="lookno">Look 01</div>
+        <div class="lookmeta">PhonePe<br>Jan '25 – Jun '25<br>Bengaluru</div>
+      </div>
+      <div>
+        <h3>Campaign Manager</h3>
+        <p class="co">PhonePe · Program Management, Ads</p>
+        <h4>Campaign growth &amp; funnel optimisation</h4>
+        <ul>
+          <li>Generated <strong>₹23.7 Cr revenue</strong> by launching and scaling PhonePe Deals across <strong>13 campaign seasons</strong> within 6 months</li>
+          <li>Delivered <strong>100% of campaign launches on time</strong> by putting clear segmentation, approval and testing steps in place</li>
+          <li>Improved funnel conversion <strong>nearly 15%</strong> by diagnosing and fixing the single largest impression-to-install drop-off</li>
+          <li>Cut brand go-live time <strong>50% (3 to 1.5 days)</strong> by standardising creative reviews and approval workflows</li>
+        </ul>
+        <h4>Cross-functional execution</h4>
+        <ul>
+          <li>Ran <strong>Indus App Store</strong> pre-launch readiness and market research with product, finance, analytics, ops and legal teams</li>
+          <li>Delivered <strong>100% of pre-launch milestones</strong> on schedule by tracking dependencies and running 1:1 stakeholder reviews</li>
+        </ul>
+        <span class="promo">Early promotion · within 1.5 years</span>
+      </div>
+    </article>
+
+    <article class="look rv">
+      <div>
+        <div class="lookno">Look 02</div>
+        <div class="lookmeta">PhonePe<br>Jun '23 – Dec '24<br>Bengaluru</div>
+      </div>
+      <div>
+        <h3>Associate Campaign Manager</h3>
+        <p class="co">PhonePe · Ads Monetization</p>
+        <h4>Retail campaigns &amp; account retention</h4>
+        <ul>
+          <li>Grew retail ad revenue <strong>20% over regular months</strong> by building <strong>Flipkart and Myntra</strong> sale campaigns across 4 festive cycles</li>
+          <li>Delivered <strong>₹29.5 Cr ad revenue at 113% of AOP</strong> by owning 15+ BFSI and retail advertisers</li>
+          <li>Retained <strong>93% of strategic BFSI accounts</strong>, including HDFC, Bajaj and Fibe, through structured performance reviews</li>
+        </ul>
+        <h4>Audience segmentation &amp; campaign analytics</h4>
+        <ul>
+          <li>Lifted lending advertiser conversion <strong>nearly 12%</strong> by A/B testing creatives for a female 18–30 audience cohort</li>
+          <li>Achieved <strong>9x net average campaign ROI</strong> through structured testing of creatives, placements and audience cohorts</li>
+          <li>Reduced Fibe's <strong>CAC by 20%</strong> by analysing campaign data, optimising creatives and studying post-click journeys</li>
+          <li>Raised ad inventory yield by <strong>nearly 18%</strong> through daily KPI tracking across clicks, installs, sign-ups and conversions</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="look rv">
+      <div>
+        <div class="lookno">Look 03</div>
+        <div class="lookmeta">BDO RISE<br>Jun '22 – Sep '22<br>Bengaluru</div>
+      </div>
+      <div>
+        <h3>Finance &amp; Administration Intern</h3>
+        <p class="co">BDO RISE Private Limited · Business services arm of BDO India</p>
+        <ul>
+          <li>Drafted <strong>2 firm-wide welfare policies</strong> covering women's late-night work, travel safety and maternity leave</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="look rv">
+      <div>
+        <div class="lookno">Look 04</div>
+        <div class="lookmeta">Unschool<br>Sep '20 – Nov '20<br>Remote</div>
+      </div>
+      <div>
+        <h3>Digital Marketing Intern</h3>
+        <p class="co">Unschool</p>
+        <ul>
+          <li>Generated <strong>80+ qualified leads</strong> by running lead campaigns and tracking weekly funnel drop-offs</li>
+          <li>Grew organic engagement <strong>nearly 12%</strong> by testing creatives and splitting audiences for 3 client brands</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ ATELIER (APPAREL VENTURE) ============ -->
+<section class="atelier" id="atelier">
+  <div class="wrap">
+    <div class="rv">
+      <p class="kicker">The Atelier · Jul '26 – Sep '26</p>
+      <h2>My own <em>women's apparel label</em></h2>
+      <p class="sub">A Jaipur-sourced D2C fashion label, where I was Strategy &amp; Procurement Lead.</p>
+    </div>
+    <div class="atgrid">
+      <div class="story rv">
+        <p>I owned the collection end to end: choosing styles, sourcing from Jaipur's apparel hubs, procurement and pricing. Then I sold it through three channels: our own D2C website, Instagram ads, and more than four offline exhibitions.</p>
+        <p>It showed me fashion retail from the inside: what sells, what margin a style can carry, and how customers act online versus in person.</p>
+        <ul>
+          <li>Drove <b>₹6.9L+ revenue in 3 months</b></li>
+          <li>Kept <b>~45% average margins</b> through assortment curation, sourcing and pricing</li>
+          <li>Served <b>227 customers</b> across online and offline channels</li>
+        </ul>
+      </div>
+      <div class="swing rv">
+        <div class="st" style="--r:-3deg"><div class="v">₹6.9L+</div><div class="l">revenue in 3 months</div><div class="sku">SKU · REV-03M</div></div>
+        <div class="st" style="--r:2.5deg"><div class="v">227</div><div class="l">customers, online &amp; offline</div><div class="sku">SKU · CUST-227</div></div>
+        <div class="st" style="--r:2deg"><div class="v">~45%</div><div class="l">average margin</div><div class="sku">SKU · MRGN-45</div></div>
+        <div class="st" style="--r:-2deg"><div class="v">4+</div><div class="l">offline exhibitions, plus D2C site &amp; Instagram</div><div class="sku">SKU · OMNI-04</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CAPSULE (OTHER PROJECTS) ============ -->
+<section id="capsule">
+  <div class="wrap">
+    <div class="rv">
+      <p class="kicker">Capsule · Other projects</p>
+      <h2>Two more <em>projects</em></h2>
+      <p class="sub">One go-to-market plan and one product I built and launched myself.</p>
+    </div>
+    <div class="capsule">
+      <article class="card rv">
+        <p class="when">Sep '26 · Masters' Union</p>
+        <h3>Prolectro</h3>
+        <p class="role">Co-Founder · GTM strategy for a clear protein &amp; electrolyte drink</p>
+        <ul>
+          <li>Identified a <b>23% lapsed-user ICP</b> with <b>₹125</b> willingness to pay, from a primary survey of <b>101</b> urban respondents</li>
+          <li>Built a GTM strategy targeting a <b>₹26 Cr SOM</b>, defining segments, pricing, positioning and launch priorities</li>
+          <li>Designed a <b>₹35.4L</b> creator-led acquisition plan targeting <b>18,750 buyers</b> via sampling and quick commerce</li>
+        </ul>
+      </article>
+      <article class="card rv">
+        <p class="when">Oct '26 · Founder</p>
+        <h3>Little Tales</h3>
+        <p class="role">AI-built photo-journaling web app</p>
+        <ul>
+          <li>Built and launched Little Tales on my own, an AI-powered subscription journaling app, from concept to launch</li>
+          <li>Designed subscription monetisation with a <b>7-day trial</b>, monthly and annual plans, and Dodo Payments integration</li>
+        </ul>
+        <a class="link" href="https://littletales.me" target="_blank" rel="noopener">littletales.me ↗</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SIZE CHART (SKILLS) ============ -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="rv">
+      <p class="kicker">Size Chart · Skills</p>
+      <h2>Skills</h2>
+    </div>
+    <div class="sizes" style="margin-top:32px">
+      <div class="chart rv">
+        <h3>Marketing &amp; Business</h3>
+        <div class="chips">
+          <span class="chip">Campaign Management</span><span class="chip">Customer Segmentation</span><span class="chip">Cohort Targeting</span><span class="chip">Campaign ROI Optimisation</span><span class="chip">Go-to-Market</span><span class="chip">Account Management</span><span class="chip">Program Management</span><span class="chip">Market Research</span>
+        </div>
+      </div>
+      <div class="chart rv">
+        <h3>Analytics &amp; Tools</h3>
+        <div class="chips">
+          <span class="chip">Campaign Performance Analysis</span><span class="chip">Funnel &amp; Cohort Analysis</span><span class="chip">A/B Testing</span><span class="chip">KPI Tracking</span><span class="chip">Root Cause Analysis</span><span class="chip">Excel (Advanced)</span><span class="chip">Salesforce</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARE LABELS (EDUCATION, ACHIEVEMENTS, LEADERSHIP) ============ -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="rv">
+      <p class="kicker">Care Label · Education &amp; more</p>
+      <h2>Where I <em>studied</em></h2>
+    </div>
+    <div class="labels" style="margin-top:32px">
+      <div class="care rv">
+        <h3>Education</h3>
+        <p class="origin">Schooled in Jaipur · BBA in Bengaluru · PGP in Gurugram</p>
+        <div class="edu"><b>Masters' Union University</b><span>PGP in Technology &amp; Business Management · Jun '26 – Present · Gurugram</span><span>Rajni Thethi Scholarship for Women: 10% tuition waiver on profile &amp; interview</span></div>
+        <div class="edu"><b>Christ University</b><span>BBA, Finance · CGPA 3.6/4.0 · First Class with Distinction · Jul '20 – Jun '23 · Bengaluru</span><span>Core Member, Zealous Theatre Club · Volunteer, Centre for Social Action</span></div>
+        <div class="edu"><b>Bharatiya Vidya Bhavan Vidyashram</b><span>CBSE XII 83% · CBSE X 95% · May '18 – May '20 · Jaipur</span><span>Captain, Girls' Cricket Team</span></div>
+      </div>
+      <div class="care rv">
+        <h3>Achievements &amp; Leadership</h3>
+        <ul class="list">
+          <li>Ranked <b>top 7%</b> of 6,000+ teams from 300 colleges at <b>The Ken Case Competition 2026</b></li>
+          <li><b>Early promotion</b> to Campaign Manager at PhonePe within 1.5 years for consistent revenue outperformance</li>
+          <li><b>1st place</b> at Thrive 2021, Christ University School of Business case competition</li>
+          <li>Head, Team Scoring, Core Student Committee: led a 5+ member team designing scoring frameworks</li>
+          <li>One of <b>12 elected members</b> of the University Student Council</li>
+          <li>Elected Class Representative for 45+ students over 3 semesters</li>
+          <li>Head, Social Media Team, BVJMUN</li>
+          <li>Taught <b>17+ hours</b> of English to government-school students under SatH-DO</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FITTING ROOM (CONTACT) ============ -->
+<section class="fitting" id="fitting">
+  <div class="wrap rv">
+    <p class="kicker">The Fitting Room</p>
+    <h2>Let's <em>talk.</em></h2>
+    <p class="sub">I'm looking for retention, CRM and lifecycle marketing roles in fashion retail. I'd be happy to walk you through any of this.</p>
+    <div class="btns">
+      <a class="btn solid" href="mailto:anushka.mittal2027@mastersunion.org">Email me</a>
+      <a class="btn" href="https://www.linkedin.com/in/anushka-mittal-900a391b6" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer>Anushka Mittal · Jaipur, Bengaluru, Gurugram · 2026</footer>
+
+<script>
+(function(){
+  var fill=document.getElementById('tapefill');
+  function onScroll(){
+    var h=document.documentElement;
+    var max=h.scrollHeight-h.clientHeight;
+    fill.style.width=(max>0?(h.scrollTop/max*100):0)+'%';
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>

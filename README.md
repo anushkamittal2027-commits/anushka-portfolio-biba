@@ -1,5 +1,7 @@
 # Anushka Mittal: The Edit
 
+Live: https://anushkamittal-portfolio.vercel.app/
+
 Portfolio site, styled as a fashion lookbook and tailored for customer retention, CRM and loyalty roles in fashion retail.
 
 Everything on the page comes from my resume. It's a single static `index.html` with no build step.
